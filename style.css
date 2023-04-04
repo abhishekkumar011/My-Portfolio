@@ -115,7 +115,7 @@ nav {
 
 .home-container {
   margin-top: 10%;
-  max-width: 1140px;
+  max-width: 1110px;
   margin-inline: auto;
   display: flex;
   align-items: center;
@@ -166,12 +166,19 @@ nav {
 .myself-btn a {
   padding: 12px 18px;
   background: var(--secondary-bgc-color);
-  color: var(--secondary-text-color);
+  /* color: var(--secondary-text-color); */
   border-radius: 4px;
   display: flex;
   align-items: center;
   gap: 5px;
   width: fit-content;
+
+  background: rgba(20, 184, 166, 0.21);
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(20, 184, 166, 0.3);
 }
 
 .myself-btn a i {
@@ -229,6 +236,8 @@ nav {
 
 .skill-container > h2 {
   text-align: center;
+  font-weight: 600;
+  font-size: 2rem;
 }
 
 .skill-container .skill-child {
@@ -242,9 +251,9 @@ nav {
   width: 40%;
 }
 
-/* .skill-avatar svg {
-  animation: anim 5s infinite alternate;
-}  */
+.skill-avatar svg {
+  animation: anim 3s linear infinite;
+} 
 
 .skill-container .skill-list {
   max-width: 50%;
@@ -293,45 +302,45 @@ nav {
 }
 
 #skill4 {
-  background-color: #EDFCFD;
+  background-color: #edfcfd;
 }
 
-#skill4>img {
+#skill4 > img {
   height: 70%;
 }
 
 #skill5 {
-  background-color: #FBF4F4;;
+  background-color: #fbf4f4;
 }
 
 #skill6 {
-  background-color: #EFE9FA;
+  background-color: #efe9fa;
 }
 
 #skill7 {
-  background-color: #E8FDF4;
+  background-color: #e8fdf4;
+}
+
+#skill7>img {
+  height: 70%;
 }
 
 #skill8 {
-  background-color: #FCE8E4;
+  background-color: #fce8e4;
 }
 
 #skill9 {
-  background-color: #DEE8EF;
+  background-color: #dee8ef;
 }
 
-
-/* @keyframes anim {
+@keyframes anim {
   0% {
     transform: translateY(0);
   }
-  25% {
-    transform: translateY(10px);
-  }
   50% {
-    transform: translateY(20px);
+    transform: translateY(40px);
   }
-  75% {
-    transform: translateY(0px);
+  100% {
+    transform: translateY(0);
   }
-} */
+}
